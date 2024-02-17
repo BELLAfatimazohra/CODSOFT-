@@ -1,0 +1,110 @@
+/* styles.css */
+
+/* Reset des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c7c9d5;
+}
+
+/* Styles pour l'en-tête */
+header {
+    background-color: #c7c9d5;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* Styles pour la navigation */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(123, 117, 195);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Ombre */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transition sur la couleur */
+}
+
+ul li a:hover {
+    background-color: #f0f0f0;
+    /* Changement de couleur au survol */
+    color: #371350;
+    /* Nouvelle couleur du texte */
+}
+
+
+/* Styles pour le contenu principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Styles pour les sections de service */
+.service {
+    background-color: #f9f9f9;
+    /* Couleur de fond */
+    padding: 20px;
+    /* Espacement intérieur */
+    margin-bottom: 20px;
+    /* Marge en bas pour séparer les sections */
+    border-radius: 10px;
+    /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre douce */
+}
+
+.service h2 {
+    color: #180931;
+    /* Couleur du titre */
+    font-size: 24px;
+    /* Taille de la police */
+    margin-bottom: 10px;
+    /* Marge en bas */
+    text-align: center;
+}
+
+.service p {
+    color: #333;
+    /* Couleur du texte */
+    font-size: 16px;
+    /* Taille de la police */
+}
+
+
+/* Styles pour le pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
