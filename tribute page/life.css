@@ -1,0 +1,99 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333; /* Couleur de fond de l'en-tête */
+    color: #fff; /* Couleur du texte de l'en-tête */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px; /* Taille de la police pour le titre */
+    margin-bottom: 20px; /* Espacement en bas du titre */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Couleur des liens dans la barre de navigation */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px; /* Espacement entre les sections */
+}
+
+h2 {
+    color: #02011a; /* Couleur des titres de section */
+    font-size: 24px; /* Taille de la police pour les titres de section */
+    margin-bottom: 10px; /* Espacement en bas des titres de section */
+}
+
+p {
+    line-height: 1.6; /* Hauteur de ligne pour les paragraphes */
+    margin-bottom: 20px; /* Espacement en bas des paragraphes */
+}
+
+/* Styles pour la galerie de photos */
+/* Styles pour la galerie de photos */
+/* Styles pour la galerie de photos */
+/* Styles pour la galerie de photos */
+#gallery {
+    overflow: hidden; /* Masquer les images débordantes */
+    position: relative; /* Position relative pour les images à l'intérieur */
+    margin-bottom: 40px; /* Espacement entre la galerie et la section suivante */
+    width: 100%; /* Ajuster la largeur de la galerie à 100% de la largeur de la page */
+}
+
+#slideshow {
+    display: flex; /* Utiliser un conteneur flexible pour les images */
+    justify-content: space-between; /* Répartir l'espace disponible entre les images */
+}
+
+.mySlides {
+    flex: 1; /* Chaque image prendra une part égale de l'espace disponible */
+    width: auto; /* Ajuster la largeur automatiquement pour maintenir les proportions */
+    max-height: 70vh; /* Limiter la hauteur maximale de chaque image à 90% de la hauteur de la fenêtre */
+    object-fit: contain; /* Ajuster l'image à l'intérieur de son conteneur sans déformation */
+}
+
+
