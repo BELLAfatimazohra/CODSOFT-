@@ -1,0 +1,175 @@
+body {
+    border: 2px solid rgb(41, 8, 91);
+    /* Bordure solide de 2px avec la couleur navy */
+    background-color: #f8f8f8;
+    /* Couleur de fond */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5) inset;
+    /* Ombre portée */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+/* Styles pour le titre */
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.title .name {
+    margin: 0;
+    font-size: 24px;
+    box-shadow: 0 0 20px rgba(79, 30, 111, 0.5);
+    color: black;
+    font-style: oblique;
+}
+
+.title img {
+    max-width: 100px;
+}
+
+/* Styles pour la section photo */
+.photo {
+    text-align: center;
+    margin-top: 20px;
+    background: url(ph.jpg);
+}
+
+.photo .title_photo {
+    font-size: 24px;
+    margin: 0;
+    color: #f0f0f0;
+    font-style: italic;
+}
+
+.photo img {
+    max-width: 200px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(9, 3, 50, 0.5);
+}
+
+.photo .nom_photo {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #f0f0f0;
+}
+
+.photo .date {
+    margin: 0;
+    font-style: italic;
+    color: #f0f0f0;
+}
+
+/* Styles pour la navigation */
+.nav {
+    background-color: #050117;
+    padding: 20px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+    box-shadow: 0 0 10px (0, 0, 0, 0.5);
+}
+
+.nav ul li:first-child a {
+    text-decoration: none;
+    /* Supprimer le soulignement par défaut */
+    position: relative;
+    /* Position relative pour permettre le positionnement absolu */
+}
+
+.nav ul li:first-child a::after {
+    content: '';
+    /* Ajouter un contenu après le lien */
+    position: absolute;
+    /* Position absolue par rapport au lien */
+    bottom: -2px;
+    /* Descendre la ligne de 2 pixels pour qu'elle soit sous le lien */
+    left: 0;
+    /* Aligner à gauche */
+    width: 100%;
+    /* Prendre toute la largeur du lien */
+    height: 2px;
+    /* Épaisseur de la ligne */
+    background-color: purple;
+    /* Couleur mauve */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* Ombre de ligne */
+}
+
+/* Styles pour les textes */
+/* Style pour le texte */
+.txt {
+    padding: 20px;
+}
+
+.txt p {
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+/* Style pour les icônes de médias sociaux */
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 40px;
+    /* Ajustez la taille de l'icône selon vos besoins */
+    margin-right: 10px;
+}
+
+/* Style pour la section "Beloved" */
+.belo {
+    text-align: center;
+    background-color: #0f0319;
+    color: white;
+    padding: 20px;
+}
+
+.belo a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    text-align: center;
+}
+
+/* Style pour le pied de page */
+footer {
+    background-color: #060617;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    /* Cette ligne assure que l'image est centrée verticalement sur toute la hauteur de la page */
+}
+
+
+.txxt {
+    text-align: center;
+   text-decoration: solid;
+}
