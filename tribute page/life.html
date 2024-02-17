@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life - Winifred Graham</title>
+    <link rel="stylesheet" href="life.css"> <!-- Link to your CSS file -->
+    <style>
+        footer {
+            background-color: #333;
+            /* Footer background color */
+            color: #fff;
+            /* Footer text color */
+            text-align: center;
+            /* Center align text */
+            padding: 20px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            /* Box shadow */
+            margin-top: 40px;
+            /* Top margin for spacing from previous content */
+        }
+
+        footer p {
+            margin: 0;
+            /* Remove default margins */
+        }
+
+        /* Add your custom CSS styles here */
+        section {
+            text-align: center;
+            /* Center align section content */
+        }
+
+        h2 {
+            cursor: pointer;
+            /* Set pointer cursor to indicate clickable title */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Add box shadow */
+            padding: 10px;
+            /* Add some space around text */
+        }
+
+        header {
+            background-color: #aaaea7d7;
+            /* Header background color */
+            color: #161059;
+            /* Header text color */
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Box shadow */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* Center align list items */
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+            /* Relative position for decorative lines */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #5b249d;
+            /* Navigation bar link color */
+        }
+
+        nav ul li::after {
+            content: '';
+            /* Add content for decorative lines */
+            position: absolute;
+            bottom: -5px;
+            /* Adjust vertical position of line */
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            /* Line color */
+        }
+
+        nav ul li:last-child::after {
+            display: none;
+            /* Hide line for last item */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Life of Winifred Graham</h1>
+        <nav>
+            <ul>
+                <li><a href="tribute.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="biography">
+            <h2 onclick="toggleText(this)">Biography</h2>
+            <p style="display:none;">Matilda Winifred Muriel Graham was born on 21 April 1873 in South Kensington,
+                London. She was baptized in Barnes in June of that year. The daughter of Robert Graham, a wealthy
+                stockbroker, she enjoyed a privileged upbringing in Hampton-on-Thames, displaying literary and dramatic
+                talent from an early age.</p>
+        </section>
+
+        <section id="achievements">
+            <h2 onclick="toggleText(this)">Achievements</h2>
+            <p style="display:none;">Graham's career as an author began in the 1890s. Her short story "Through the
+                Multitude of Business", published in the summer 1894 issue of Belgravia magazine, described the revenge
+                of a beautiful heiress on a man who had taken advantage of her. Her first book-length novel, On the Down
+                Grade, was published in 1896.
+
+                Graham was a prolific writer, producing eighty-eight books during her lifetime, as well as several short
+                stories published in newspapers and magazines. In addition to the romantic novels and thrillers which
+                constituted the vast majority of her output, she also wrote a highly critical popular history of
+                Mormonism, two volumes supposedly communicated by her father after his death via automatic writing, and
+                a three-volume autobiography.
+
+                Between 1908 and 1924, Graham led a campaign to ban Mormon missionaries from the United Kingdom. Her
+                novel The Love Story of a Mormon (1911) was adapted into the silent film Trapped by the Mormons (1922).
+
+                In addition to her criticisms of Mormonism, Graham also published works critical of Zionism (The
+                Zionists), Christian Science (Christian Murderers), Roman Catholicism (Mary), and the women's suffrage
+                movement (The Enemy of Woman).</p>
+        </section>
+
+        <section id="interests">
+            <h2 onclick="toggleText(this)">Books</h2>
+            <p style="display:none;">
+                Graham, Winifred (1896). On the Down Grade. London: Chapman & Co. <br>
+                Graham, Winifred (1896). When the Birds Begin to Sing <br>
+                Graham, Winifred (1898). Meresia. London: Hurst & Blackett. <br>
+                Graham, Winifred (1896). The Star Child. London: Hurst & Blackett. <br>
+                Graham, Winifred (1901). A Social Pretender. London: John Long. <br>
+                Graham, Winifred (1902). A Child at the Helm. London: George Newnes.. <br>
+                Graham, Winifred (1902). The Zionists. London: Hutchinson & Co. <br>
+                Graham, Winifred (1905). Wickedness in High Places. London: F. V. White & Co. <br>
+                Graham, Winifred (1905). The Vision at the Savoy. London: F. V. White & Co.
+            </p>
+        </section>
+
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <div id="slideshow" class="slideshow-container">
+                <img class="mySlides" src="ass.jpg" alt="">
+                <img class="mySlides" src="kr.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Winifred Graham. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var slides = document.getElementsByClassName("mySlides");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        function toggleText(element) {
+            var paragraph = element.nextElementSibling;
+            if (paragraph.style.display === "none") {
+                paragraph.style.display = "block";
+            } else {
+                paragraph.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
