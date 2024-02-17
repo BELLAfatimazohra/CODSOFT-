@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="service.css">
+    <title>Services - Winifred Graham</title>
+</head>
+<body>
+    <header>
+        <h1>Services</h1>
+        <nav>
+            <ul>
+                <li><a href="tribute.html">Home</a></li>
+                <li><a href="life.html">Life</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="photo.html">Photos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="service">
+            <h2 onclick="toggleText(this)">Dramatic Consultation</h2>
+            <p class="hidden">Enjoy an individual consultation with Winifred Graham to enhance your acting skills and refine your dramatic interpretation.</p>
+        </section>
+        <section class="service">
+            <h2 onclick="toggleText(this)">Theatre Workshops</h2>
+            <p class="hidden">Participate in theatre workshops led by Winifred Graham to explore various acting techniques and hone your stage talent.</p>
+        </section>
+        <section class="service">
+            <h2 onclick="toggleText(this)">Vocal Coaching</h2>
+            <p class="hidden">Learn the fundamentals of singing and improve your voice under the expert guidance of Winifred Graham, who will share her valuable knowledge and insights.</p>
+        </section>
+        <section class="service">
+            <h2 onclick="toggleText(this)">Dance Classes</h2>
+            <p class="hidden">Join our dance classes to explore different styles and develop your dancing skills with our qualified instructors.</p>
+        </section>
+        <section class="service">
+            <h2 onclick="toggleText(this)">Scenic Design Training</h2>
+            <p class="hidden">Discover the technical aspects of theatre set design and learn how to create compelling environments to support performances on stage.</p>
+        </section>
+        <section class="service">
+            <h2 onclick="toggleText(this)">Screenwriting Coaching</h2>
+            <p class="hidden">Benefit from individual coaching to develop your screenwriting skills and learn techniques for crafting compelling narratives for theatre and film.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Winifred Graham. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    function toggleText(element) {
+    var paragraph = element.nextElementSibling;
+    paragraph.classList.toggle("hidden");
+}
+</script>
+</html>
